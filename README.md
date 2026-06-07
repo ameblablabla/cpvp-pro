@@ -12,7 +12,7 @@
 
 > **In development** — публичная версия платформы ещё не запущена.
 
-Текущий этап: подготовка основы проекта, визуального языка и инфраструктуры для дальнейшей разработки полноценного сайта.
+Текущий этап: подготовка основы проекта, визуального языка, правил и инфраструктуры для дальнейшей разработки полноценного сайта.
 
 ## Дизайн в Figma
 
@@ -32,15 +32,39 @@
 
 Оставшиеся mobile-макеты и дополнительные desktop-экраны будут добавлены после сброса лимита Figma Starter MCP.
 
+## Брендинг в Canva
+
+Редактируемые Canva-исходники:
+
+- [logo and wordmark](https://www.canva.com/d/i0h_0fPMxTsPaFN);
+- [wide social cover](https://www.canva.com/d/4z_sqetriJFXBbc);
+- [square announcement post](https://www.canva.com/d/gmSwOh1DreTnhJN);
+- [vertical story template](https://www.canva.com/d/q3k1ftX70akt_El).
+
+Production-экспорты логотипа, favicon pack и OG image ещё нужно подготовить отдельно. Актуальный список хранится в [`docs/BRANDING_STATUS.md`](docs/BRANDING_STATUS.md).
+
 ## Документация
+
+### Product foundation
 
 - [`docs/PROJECT.md`](docs/PROJECT.md) — краткий обзор текущего состояния проекта.
 - [`docs/ROADMAP.md`](docs/ROADMAP.md) — этапы дальнейшей разработки с отмеченным прогрессом.
 - [`docs/INFORMATION_ARCHITECTURE.md`](docs/INFORMATION_ARCHITECTURE.md) — карта разделов и навигации платформы.
 - [`docs/UI_KIT.md`](docs/UI_KIT.md) — начальная спецификация компонентов интерфейса.
-- [`docs/ROLES_AND_MODERATION.md`](docs/ROLES_AND_MODERATION.md) — роли пользователей и базовые правила модерации.
 - [`docs/DESIGN.md`](docs/DESIGN.md) — визуальный язык и правила работы с дизайн-ассетами.
 - [`docs/FIGMA_STATUS.md`](docs/FIGMA_STATUS.md) — состояние макетов и список оставшихся задач.
+- [`docs/BRANDING_STATUS.md`](docs/BRANDING_STATUS.md) — Canva-исходники и production-экспорты.
+
+### Product rules and content
+
+- [`docs/ROLES_AND_MODERATION.md`](docs/ROLES_AND_MODERATION.md) — роли пользователей и базовые правила модерации.
+- [`docs/TIERLIST_RULES.md`](docs/TIERLIST_RULES.md) — первая версия правил TierList.
+- [`docs/PLATFORM_RULES.md`](docs/PLATFORM_RULES.md) — правила платформы.
+- [`docs/FORUM_RULES.md`](docs/FORUM_RULES.md) — правила форума.
+- [`docs/MODERATION_POLICY.md`](docs/MODERATION_POLICY.md) — порядок обработки обращений и апелляций.
+- [`docs/FAQ.md`](docs/FAQ.md) — FAQ проекта.
+- [`docs/LEARNING_CONTENT_PLAN.md`](docs/LEARNING_CONTENT_PLAN.md) — план обучающих материалов.
+- [`docs/COMMUNITY_PLAN.md`](docs/COMMUNITY_PLAN.md) — план внешних каналов и структуры сообщества.
 - [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md) — checklist перед публикацией изменений.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — правила внесения изменений.
 
@@ -65,7 +89,10 @@
 - с адаптивной мобильной версией;
 - с поддержкой `prefers-reduced-motion`;
 - с inline SVG favicon;
-- с оптимизированными CSS-анимациями через `transform` и `opacity`.
+- с оптимизированными CSS-анимациями через `transform` и `opacity`;
+- с canonical URL;
+- с Open Graph и Twitter metadata;
+- с `robots.txt` и `sitemap.xml`.
 
 ## Автоматическая проверка
 
@@ -75,6 +102,10 @@
 
 - наличие обязательных файлов;
 - корректное значение `CNAME`;
+- наличие `robots.txt` и `sitemap.xml`;
+- canonical URL;
+- Open Graph site name;
+- Twitter Card metadata;
 - отсутствие случайно добавленного JavaScript;
 - отсутствие внешнего stylesheet;
 - отсутствие запросов к Google Fonts;
@@ -94,13 +125,21 @@ cpvp-pro/
 ├── assets/
 │   └── readme-banner.svg                 # фирменный баннер README
 ├── docs/
+│   ├── BRANDING_STATUS.md                # Canva-исходники и export checklist
+│   ├── COMMUNITY_PLAN.md                 # структура будущего сообщества
 │   ├── DESIGN.md                         # визуальный язык проекта
+│   ├── FAQ.md                            # частые вопросы
 │   ├── FIGMA_STATUS.md                   # состояние макетов
+│   ├── FORUM_RULES.md                    # правила форума
 │   ├── INFORMATION_ARCHITECTURE.md       # структура будущей платформы
+│   ├── LEARNING_CONTENT_PLAN.md          # план обучающих материалов
+│   ├── MODERATION_POLICY.md              # политика модерации
+│   ├── PLATFORM_RULES.md                 # правила платформы
 │   ├── PROJECT.md                        # обзор текущей реализации
 │   ├── RELEASE_CHECKLIST.md              # checklist публикации
 │   ├── ROADMAP.md                        # этапы разработки
 │   ├── ROLES_AND_MODERATION.md           # роли и базовая модерация
+│   ├── TIERLIST_RULES.md                 # правила TierList
 │   └── UI_KIT.md                         # компоненты будущего интерфейса
 ├── .editorconfig                         # единый стиль форматирования файлов
 ├── .gitignore                            # исключения для локальных файлов
@@ -109,7 +148,9 @@ cpvp-pro/
 ├── CNAME                                 # подключение домена cpvp.pro
 ├── CONTRIBUTING.md                       # правила внесения изменений
 ├── README.md                             # описание проекта
-└── index.html                            # production landing page
+├── index.html                            # production landing page
+├── robots.txt                            # правила для поисковых роботов
+└── sitemap.xml                           # sitemap публичной страницы
 ```
 
 ## Локальный запуск
@@ -152,12 +193,15 @@ cpvp.pro
 - [x] Подключить домен `cpvp.pro`
 - [x] Разместить временную landing page
 - [x] Убрать внешние зависимости из критического пути
+- [x] Добавить SEO-основу
 - [x] Добавить оформление и документацию репозитория
 - [x] Добавить фирменную страницу `404`
 - [x] Зафиксировать структуру платформы и навигацию
 - [x] Подготовить первую спецификацию UI-kit
 - [x] Добавить автоматические проверки landing page
 - [x] Подготовить основные desktop-макеты в Figma
+- [x] Подготовить Canva-исходники брендинга
+- [x] Подготовить drafts правил, FAQ и контент-планов
 - [ ] Подготовить mobile-макеты в Figma
 - [ ] Экспортировать финальные branding-ассеты
 - [ ] Реализовать систему аккаунтов
