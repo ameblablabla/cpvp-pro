@@ -15,7 +15,12 @@
 - [x] Define the information architecture.
 - [x] Prepare the first UI kit specification.
 - [x] Define navigation and page hierarchy.
-- [ ] Prepare desktop layouts.
+- [x] Prepare desktop home layout.
+- [x] Prepare desktop learning layout.
+- [x] Prepare desktop TierList layout.
+- [x] Prepare desktop forum layout.
+- [ ] Prepare desktop player profile layout.
+- [ ] Prepare desktop moderation layout.
 - [ ] Prepare mobile layouts.
 - [ ] Export final branding assets.
 
