@@ -53,6 +53,25 @@ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 - Disable non-essential motion on mobile when it improves performance.
 - Respect `prefers-reduced-motion`.
 
+## Figma source
+
+Main editable Figma file:
+
+[`CPVP.PRO — UI Kit and Product Layouts`](https://www.figma.com/design/7VjJ1bfnfWLSnxIJOTHko9/CPVP.PRO-%E2%80%94-UI-Kit-and-Product-Layouts?node-id=0-1&p=f)
+
+Current Figma status is documented in [`FIGMA_STATUS.md`](FIGMA_STATUS.md).
+
+## Canva sources
+
+Editable Canva source designs:
+
+- [logo and wordmark](https://www.canva.com/d/i0h_0fPMxTsPaFN);
+- [wide social cover](https://www.canva.com/d/4z_sqetriJFXBbc);
+- [square announcement post](https://www.canva.com/d/gmSwOh1DreTnhJN);
+- [vertical story template](https://www.canva.com/d/q3k1ftX70akt_El).
+
+Current export status is documented in [`BRANDING_STATUS.md`](BRANDING_STATUS.md).
+
 ## Figma and Canva workflow
 
 Figma or Canva can be used for concept work, banners, social visuals and UI exploration. Keep source design files outside the production path unless the team intentionally publishes them.
