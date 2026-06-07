@@ -1,0 +1,34 @@
+name: Validate static site
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required files
+        run: |
+          test -f index.html
+          test -f 404.html
+          test -f CNAME
+          test -f README.md
+          test -f .nojekyll
+
+      - name: Check custom domain
+        run: grep -Fxq 'cpvp.pro' CNAME
+
+      - name: Check lightweight landing page
+        run: |
+          ! grep -Eqi '<script([[:space:]>])' index.html
+          ! grep -Eqi 'rel=["'"']stylesheet["'"']' index.html
+          ! grep -Eqi 'fonts\.googleapis\.com|fonts\.gstatic\.com' index.html
+
+      - name: Check fallback page
+        run: grep -Fq '404' 404.html
