@@ -11,7 +11,7 @@
 - [x] Add automated checks for the static site.
 - [x] Add `robots.txt` and `sitemap.xml`.
 - [x] Add canonical and social metadata.
-- [x] Add production SVG favicon and webmanifest.
+- [x] Add production favicon pack and webmanifest.
 
 ## Stage 1 — Product structure
 
@@ -33,9 +33,9 @@
 - [x] Prepare editable announcement post source in Canva.
 - [x] Prepare editable story template source in Canva.
 - [x] Add SVG branding assets to the repository.
-- [x] Connect the SVG favicon and webmanifest.
-- [ ] Add the remaining image exports.
-- [ ] Add OG image and Apple touch icon.
+- [x] Add PNG and ICO branding assets to the repository.
+- [x] Connect favicon pack and webmanifest.
+- [x] Add OG image and Apple touch icon.
 
 ## Stage 3 — Product content
 
