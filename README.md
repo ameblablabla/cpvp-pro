@@ -12,7 +12,7 @@
 
 > **In development** — публичная версия платформы ещё не запущена.
 
-Подготовлены домен, landing page, документация продукта, первые desktop-макеты, Canva-исходники брендинга, SVG favicon и webmanifest.
+Подготовлены домен, landing page, документация продукта, первые desktop-макеты, Canva-исходники и полный production branding pack.
 
 ## Дизайн
 
@@ -43,7 +43,7 @@
 - [square announcement post](https://www.canva.com/d/gmSwOh1DreTnhJN);
 - [vertical story template](https://www.canva.com/d/q3k1ftX70akt_El).
 
-В репозиторий уже добавлены `assets/branding/logo-mark.svg`, `assets/branding/favicon.svg` и `site.webmanifest`. Оставшиеся PNG и ICO-файлы нужно загрузить отдельно по инструкции [`docs/MANUAL_BRANDING_UPLOAD.md`](docs/MANUAL_BRANDING_UPLOAD.md).
+Production branding pack полностью загружен в `assets/branding/`. На landing page подключены SVG favicon, ICO fallback, Apple touch icon, Open Graph image, Twitter image и `site.webmanifest`.
 
 ## Документация
 
@@ -56,7 +56,6 @@
 - [`docs/DESIGN.md`](docs/DESIGN.md)
 - [`docs/FIGMA_STATUS.md`](docs/FIGMA_STATUS.md)
 - [`docs/BRANDING_STATUS.md`](docs/BRANDING_STATUS.md)
-- [`docs/MANUAL_BRANDING_UPLOAD.md`](docs/MANUAL_BRANDING_UPLOAD.md)
 
 ### Product rules and content
 
@@ -81,10 +80,12 @@
 - без внешнего CSS;
 - с адаптивной мобильной версией;
 - с `prefers-reduced-motion`;
-- с production SVG favicon;
+- с SVG favicon и ICO fallback;
+- с Apple touch icon;
 - с `site.webmanifest`;
 - с canonical URL;
-- с Open Graph и Twitter metadata;
+- с Open Graph image;
+- с Twitter image;
 - с `robots.txt` и `sitemap.xml`.
 
 ## Автоматическая проверка
@@ -102,8 +103,16 @@ cpvp-pro/
 │   └── PULL_REQUEST_TEMPLATE.md
 ├── assets/
 │   ├── branding/
+│   │   ├── announcement-template.png
+│   │   ├── apple-touch-icon.png
+│   │   ├── favicon.ico
 │   │   ├── favicon.svg
-│   │   └── logo-mark.svg
+│   │   ├── logo-mark.png
+│   │   ├── logo-mark.svg
+│   │   ├── logo.svg
+│   │   ├── og-image.png
+│   │   ├── social-cover.png
+│   │   └── story-template.png
 │   └── readme-banner.svg
 ├── docs/
 ├── .editorconfig
@@ -132,13 +141,12 @@ python -m http.server 8080
 - [x] Подключить домен `cpvp.pro`
 - [x] Разместить и оптимизировать landing page
 - [x] Добавить SEO-основу
-- [x] Добавить SVG favicon и webmanifest
+- [x] Добавить полный branding pack
+- [x] Подключить favicon pack, OG image и webmanifest
 - [x] Оформить репозиторий и документацию
 - [x] Подготовить desktop-макеты в Figma
 - [x] Подготовить Canva-исходники
 - [x] Подготовить drafts правил, FAQ и контент-планов
-- [ ] Загрузить оставшиеся PNG и ICO-файлы
-- [ ] Добавить OG image и Apple touch icon
 - [ ] Подготовить mobile-макеты
 - [ ] Перейти к разработке полноценной платформы
 
