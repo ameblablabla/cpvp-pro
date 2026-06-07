@@ -1,0 +1,16 @@
+{
+  "name": "CPVP.PRO",
+  "short_name": "CPVP.PRO",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05070D",
+  "theme_color": "#070910",
+  "icons": [
+    {
+      "src": "/assets/branding/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
