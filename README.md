@@ -14,6 +14,24 @@
 
 Текущий этап: подготовка основы проекта, визуального языка и инфраструктуры для дальнейшей разработки полноценного сайта.
 
+## Дизайн в Figma
+
+Основной рабочий файл:
+
+[`CPVP.PRO — UI Kit and Product Layouts`](https://www.figma.com/design/7VjJ1bfnfWLSnxIJOTHko9/CPVP.PRO-%E2%80%94-UI-Kit-and-Product-Layouts?node-id=0-1&p=f)
+
+В Figma уже подготовлены:
+
+- cover проекта;
+- foundations: палитра, типографика, spacing, radii и статусы;
+- базовый UI-kit;
+- desktop-макет главной страницы;
+- desktop-макет обучения;
+- desktop-макет TierList;
+- desktop-макет форума.
+
+Оставшиеся mobile-макеты и дополнительные desktop-экраны будут добавлены после сброса лимита Figma Starter MCP.
+
 ## Документация
 
 - [`docs/PROJECT.md`](docs/PROJECT.md) — краткий обзор текущего состояния проекта.
@@ -22,6 +40,7 @@
 - [`docs/UI_KIT.md`](docs/UI_KIT.md) — начальная спецификация компонентов интерфейса.
 - [`docs/ROLES_AND_MODERATION.md`](docs/ROLES_AND_MODERATION.md) — роли пользователей и базовые правила модерации.
 - [`docs/DESIGN.md`](docs/DESIGN.md) — визуальный язык и правила работы с дизайн-ассетами.
+- [`docs/FIGMA_STATUS.md`](docs/FIGMA_STATUS.md) — состояние макетов и список оставшихся задач.
 - [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md) — checklist перед публикацией изменений.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — правила внесения изменений.
 
@@ -76,6 +95,7 @@ cpvp-pro/
 │   └── readme-banner.svg                 # фирменный баннер README
 ├── docs/
 │   ├── DESIGN.md                         # визуальный язык проекта
+│   ├── FIGMA_STATUS.md                   # состояние макетов
 │   ├── INFORMATION_ARCHITECTURE.md       # структура будущей платформы
 │   ├── PROJECT.md                        # обзор текущей реализации
 │   ├── RELEASE_CHECKLIST.md              # checklist публикации
@@ -137,7 +157,8 @@ cpvp.pro
 - [x] Зафиксировать структуру платформы и навигацию
 - [x] Подготовить первую спецификацию UI-kit
 - [x] Добавить автоматические проверки landing page
-- [ ] Подготовить desktop и mobile макеты
+- [x] Подготовить основные desktop-макеты в Figma
+- [ ] Подготовить mobile-макеты в Figma
 - [ ] Экспортировать финальные branding-ассеты
 - [ ] Реализовать систему аккаунтов
 - [ ] Добавить раздел обучения
