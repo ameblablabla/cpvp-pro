@@ -20,9 +20,19 @@ jobs:
           test -f CNAME
           test -f README.md
           test -f .nojekyll
+          test -f robots.txt
+          test -f sitemap.xml
 
       - name: Check custom domain
         run: grep -Fxq 'cpvp.pro' CNAME
+
+      - name: Check SEO files
+        run: |
+          grep -Fq 'Sitemap: https://cpvp.pro/sitemap.xml' robots.txt
+          grep -Fq '<loc>https://cpvp.pro/</loc>' sitemap.xml
+          grep -Fq '<link rel="canonical" href="https://cpvp.pro/">' index.html
+          grep -Fq '<meta property="og:site_name" content="CPVP.PRO">' index.html
+          grep -Fq '<meta name="twitter:card" content="summary">' index.html
 
       - name: Check lightweight landing page
         run: |
