@@ -8,108 +8,88 @@
 
 Сейчас в репозитории находится оптимизированная временная landing page для домена [`cpvp.pro`](https://cpvp.pro/).
 
-## Статус проекта
+## Статус
 
 > **In development** — публичная версия платформы ещё не запущена.
 
-Текущий этап: подготовка основы проекта, визуального языка, правил и инфраструктуры для дальнейшей разработки полноценного сайта.
+Подготовлены домен, landing page, документация продукта, первые desktop-макеты, Canva-исходники брендинга, SVG favicon и webmanifest.
 
-## Дизайн в Figma
+## Дизайн
 
-Основной рабочий файл:
+### Figma
+
+Основной файл:
 
 [`CPVP.PRO — UI Kit and Product Layouts`](https://www.figma.com/design/7VjJ1bfnfWLSnxIJOTHko9/CPVP.PRO-%E2%80%94-UI-Kit-and-Product-Layouts?node-id=0-1&p=f)
 
-В Figma уже подготовлены:
+Уже готовы:
 
-- cover проекта;
-- foundations: палитра, типографика, spacing, radii и статусы;
-- базовый UI-kit;
-- desktop-макет главной страницы;
-- desktop-макет обучения;
-- desktop-макет TierList;
-- desktop-макет форума.
+- cover;
+- foundations;
+- UI-kit;
+- desktop home;
+- desktop learning;
+- desktop TierList;
+- desktop forum.
 
 Оставшиеся mobile-макеты и дополнительные desktop-экраны будут добавлены после сброса лимита Figma Starter MCP.
 
-## Брендинг в Canva
+### Canva
 
-Редактируемые Canva-исходники:
+Редактируемые исходники:
 
 - [logo and wordmark](https://www.canva.com/d/i0h_0fPMxTsPaFN);
 - [wide social cover](https://www.canva.com/d/4z_sqetriJFXBbc);
 - [square announcement post](https://www.canva.com/d/gmSwOh1DreTnhJN);
 - [vertical story template](https://www.canva.com/d/q3k1ftX70akt_El).
 
-Production-экспорты логотипа, favicon pack и OG image ещё нужно подготовить отдельно. Актуальный список хранится в [`docs/BRANDING_STATUS.md`](docs/BRANDING_STATUS.md).
+В репозиторий уже добавлены `assets/branding/logo-mark.svg`, `assets/branding/favicon.svg` и `site.webmanifest`. Оставшиеся PNG и ICO-файлы нужно загрузить отдельно по инструкции [`docs/MANUAL_BRANDING_UPLOAD.md`](docs/MANUAL_BRANDING_UPLOAD.md).
 
 ## Документация
 
 ### Product foundation
 
-- [`docs/PROJECT.md`](docs/PROJECT.md) — краткий обзор текущего состояния проекта.
-- [`docs/ROADMAP.md`](docs/ROADMAP.md) — этапы дальнейшей разработки с отмеченным прогрессом.
-- [`docs/INFORMATION_ARCHITECTURE.md`](docs/INFORMATION_ARCHITECTURE.md) — карта разделов и навигации платформы.
-- [`docs/UI_KIT.md`](docs/UI_KIT.md) — начальная спецификация компонентов интерфейса.
-- [`docs/DESIGN.md`](docs/DESIGN.md) — визуальный язык и правила работы с дизайн-ассетами.
-- [`docs/FIGMA_STATUS.md`](docs/FIGMA_STATUS.md) — состояние макетов и список оставшихся задач.
-- [`docs/BRANDING_STATUS.md`](docs/BRANDING_STATUS.md) — Canva-исходники и production-экспорты.
+- [`docs/PROJECT.md`](docs/PROJECT.md)
+- [`docs/ROADMAP.md`](docs/ROADMAP.md)
+- [`docs/INFORMATION_ARCHITECTURE.md`](docs/INFORMATION_ARCHITECTURE.md)
+- [`docs/UI_KIT.md`](docs/UI_KIT.md)
+- [`docs/DESIGN.md`](docs/DESIGN.md)
+- [`docs/FIGMA_STATUS.md`](docs/FIGMA_STATUS.md)
+- [`docs/BRANDING_STATUS.md`](docs/BRANDING_STATUS.md)
+- [`docs/MANUAL_BRANDING_UPLOAD.md`](docs/MANUAL_BRANDING_UPLOAD.md)
 
 ### Product rules and content
 
-- [`docs/ROLES_AND_MODERATION.md`](docs/ROLES_AND_MODERATION.md) — роли пользователей и базовые правила модерации.
-- [`docs/TIERLIST_RULES.md`](docs/TIERLIST_RULES.md) — первая версия правил TierList.
-- [`docs/PLATFORM_RULES.md`](docs/PLATFORM_RULES.md) — правила платформы.
-- [`docs/FORUM_RULES.md`](docs/FORUM_RULES.md) — правила форума.
-- [`docs/MODERATION_POLICY.md`](docs/MODERATION_POLICY.md) — порядок обработки обращений и апелляций.
-- [`docs/FAQ.md`](docs/FAQ.md) — FAQ проекта.
-- [`docs/LEARNING_CONTENT_PLAN.md`](docs/LEARNING_CONTENT_PLAN.md) — план обучающих материалов.
-- [`docs/COMMUNITY_PLAN.md`](docs/COMMUNITY_PLAN.md) — план внешних каналов и структуры сообщества.
-- [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md) — checklist перед публикацией изменений.
-- [`CONTRIBUTING.md`](CONTRIBUTING.md) — правила внесения изменений.
+- [`docs/ROLES_AND_MODERATION.md`](docs/ROLES_AND_MODERATION.md)
+- [`docs/TIERLIST_RULES.md`](docs/TIERLIST_RULES.md)
+- [`docs/PLATFORM_RULES.md`](docs/PLATFORM_RULES.md)
+- [`docs/FORUM_RULES.md`](docs/FORUM_RULES.md)
+- [`docs/MODERATION_POLICY.md`](docs/MODERATION_POLICY.md)
+- [`docs/FAQ.md`](docs/FAQ.md)
+- [`docs/LEARNING_CONTENT_PLAN.md`](docs/LEARNING_CONTENT_PLAN.md)
+- [`docs/COMMUNITY_PLAN.md`](docs/COMMUNITY_PLAN.md)
+- [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md)
+- [`CONTRIBUTING.md`](CONTRIBUTING.md)
 
-## Планируемые разделы
+## Landing page
 
-| Раздел | Назначение |
-|---|---|
-| Обучение | Гайды, механики, разборы ошибок и путь развития игрока |
-| TierList | Рейтинги игроков, уровни, категории и прозрачная структура оценок |
-| Форум | Обсуждения, дуэли, поиск игроков и полезные материалы |
-| Комьюнити | Единая точка входа для Crystal PvP-сообщества |
-
-## Текущая landing page
-
-Страница намеренно сделана максимально лёгкой:
+Текущая страница намеренно сделана лёгкой:
 
 - без JavaScript;
 - без фреймворков;
 - без внешних шрифтов;
-- без внешних изображений;
-- без отдельных CSS-запросов;
+- без внешнего CSS;
 - с адаптивной мобильной версией;
-- с поддержкой `prefers-reduced-motion`;
-- с inline SVG favicon;
-- с оптимизированными CSS-анимациями через `transform` и `opacity`;
+- с `prefers-reduced-motion`;
+- с production SVG favicon;
+- с `site.webmanifest`;
 - с canonical URL;
 - с Open Graph и Twitter metadata;
 - с `robots.txt` и `sitemap.xml`.
 
 ## Автоматическая проверка
 
-Для ветки `main` и Pull Request добавлен workflow `.github/workflows/validate-static-site.yml`.
-
-Он проверяет:
-
-- наличие обязательных файлов;
-- корректное значение `CNAME`;
-- наличие `robots.txt` и `sitemap.xml`;
-- canonical URL;
-- Open Graph site name;
-- Twitter Card metadata;
-- отсутствие случайно добавленного JavaScript;
-- отсутствие внешнего stylesheet;
-- отсутствие запросов к Google Fonts;
-- наличие фирменной страницы `404.html`.
+Workflow `.github/workflows/validate-static-site.yml` запускается для `main` и Pull Request. Он проверяет обязательные файлы, домен, SEO-основу, отсутствие JavaScript, отсутствие внешнего CSS и отсутствие Google Fonts.
 
 ## Структура репозитория
 
@@ -117,97 +97,50 @@ Production-экспорты логотипа, favicon pack и OG image ещё н
 cpvp-pro/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
-│   │   └── bug_report.md                 # шаблон сообщения об ошибке
 │   ├── workflows/
-│   │   └── validate-static-site.yml      # автоматическая проверка landing page
-│   ├── CODEOWNERS                        # владелец изменений в репозитории
-│   └── PULL_REQUEST_TEMPLATE.md          # единый шаблон Pull Request
+│   ├── CODEOWNERS
+│   └── PULL_REQUEST_TEMPLATE.md
 ├── assets/
-│   └── readme-banner.svg                 # фирменный баннер README
+│   ├── branding/
+│   │   ├── favicon.svg
+│   │   └── logo-mark.svg
+│   └── readme-banner.svg
 ├── docs/
-│   ├── BRANDING_STATUS.md                # Canva-исходники и export checklist
-│   ├── COMMUNITY_PLAN.md                 # структура будущего сообщества
-│   ├── DESIGN.md                         # визуальный язык проекта
-│   ├── FAQ.md                            # частые вопросы
-│   ├── FIGMA_STATUS.md                   # состояние макетов
-│   ├── FORUM_RULES.md                    # правила форума
-│   ├── INFORMATION_ARCHITECTURE.md       # структура будущей платформы
-│   ├── LEARNING_CONTENT_PLAN.md          # план обучающих материалов
-│   ├── MODERATION_POLICY.md              # политика модерации
-│   ├── PLATFORM_RULES.md                 # правила платформы
-│   ├── PROJECT.md                        # обзор текущей реализации
-│   ├── RELEASE_CHECKLIST.md              # checklist публикации
-│   ├── ROADMAP.md                        # этапы разработки
-│   ├── ROLES_AND_MODERATION.md           # роли и базовая модерация
-│   ├── TIERLIST_RULES.md                 # правила TierList
-│   └── UI_KIT.md                         # компоненты будущего интерфейса
-├── .editorconfig                         # единый стиль форматирования файлов
-├── .gitignore                            # исключения для локальных файлов
-├── .nojekyll                             # отключение обработки Jekyll
-├── 404.html                              # фирменная страница ошибки
-├── CNAME                                 # подключение домена cpvp.pro
-├── CONTRIBUTING.md                       # правила внесения изменений
-├── README.md                             # описание проекта
-├── index.html                            # production landing page
-├── robots.txt                            # правила для поисковых роботов
-└── sitemap.xml                           # sitemap публичной страницы
+├── .editorconfig
+├── .gitignore
+├── .nojekyll
+├── 404.html
+├── CNAME
+├── CONTRIBUTING.md
+├── README.md
+├── index.html
+├── robots.txt
+├── sitemap.xml
+└── site.webmanifest
 ```
 
 ## Локальный запуск
-
-Для просмотра landing page достаточно открыть `index.html` в браузере.
-
-Для локального HTTP-сервера можно использовать Python:
 
 ```bash
 python -m http.server 8080
 ```
 
-После запуска страница будет доступна по адресу `http://localhost:8080`.
-
-## Деплой
-
-Текущая версия рассчитана на публикацию через GitHub Pages.
-
-Домен задаётся файлом `CNAME`:
-
-```text
-cpvp.pro
-```
-
-После изменений в ветке `main` GitHub Pages автоматически обновляет опубликованную версию сайта.
-
-## Принципы разработки
-
-При дальнейшем развитии проекта рекомендуется сохранять следующие правила:
-
-1. Не добавлять зависимости без измеримой пользы.
-2. Проверять влияние каждого визуального эффекта на производительность мобильных устройств.
-3. Загружать только критически необходимые ресурсы на первом экране.
-4. Использовать семантическую HTML-разметку и доступные интерактивные элементы.
-5. Следить за Core Web Vitals после каждого крупного изменения интерфейса.
-6. Сохранять единый визуальный стиль: тёмный premium gaming UI, чистая сетка и умеренные неоновые акценты.
+Страница будет доступна по адресу `http://localhost:8080`.
 
 ## Roadmap
 
 - [x] Подключить домен `cpvp.pro`
-- [x] Разместить временную landing page
-- [x] Убрать внешние зависимости из критического пути
+- [x] Разместить и оптимизировать landing page
 - [x] Добавить SEO-основу
-- [x] Добавить оформление и документацию репозитория
-- [x] Добавить фирменную страницу `404`
-- [x] Зафиксировать структуру платформы и навигацию
-- [x] Подготовить первую спецификацию UI-kit
-- [x] Добавить автоматические проверки landing page
-- [x] Подготовить основные desktop-макеты в Figma
-- [x] Подготовить Canva-исходники брендинга
+- [x] Добавить SVG favicon и webmanifest
+- [x] Оформить репозиторий и документацию
+- [x] Подготовить desktop-макеты в Figma
+- [x] Подготовить Canva-исходники
 - [x] Подготовить drafts правил, FAQ и контент-планов
-- [ ] Подготовить mobile-макеты в Figma
-- [ ] Экспортировать финальные branding-ассеты
-- [ ] Реализовать систему аккаунтов
-- [ ] Добавить раздел обучения
-- [ ] Реализовать TierList
-- [ ] Запустить форум и комьюнити-функции
+- [ ] Загрузить оставшиеся PNG и ICO-файлы
+- [ ] Добавить OG image и Apple touch icon
+- [ ] Подготовить mobile-макеты
+- [ ] Перейти к разработке полноценной платформы
 
 Полная версия roadmap находится в [`docs/ROADMAP.md`](docs/ROADMAP.md).
 
