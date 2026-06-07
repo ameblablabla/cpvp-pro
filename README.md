@@ -4,7 +4,7 @@
 
 # CPVP.PRO
 
-**CPVP.PRO** — развивающаяся русскоязычная платформа для игроков Minecraft Crystal PvP. Проект объединит обучение, профили игроков, Vanilla TierList, форум, новости и комьюнити-инструменты в одном интерфейсе.
+**CPVP.PRO** — развивающаяся русскоязычная и англоязычная платформа для игроков Minecraft Crystal PvP. Проект объединит обучение, профили игроков, Vanilla CPVP TierList, правила, уведомления, Find Duel, команды и другие комьюнити-инструменты.
 
 CPVP.PRO не ограничивается тиртестами: tier testing является важной частью платформы, но не единственным назначением сайта.
 
@@ -14,7 +14,81 @@ CPVP.PRO не ограничивается тиртестами: tier testing я
 
 > **In development** — публичная версия платформы ещё не запущена.
 
-Подготовлены домен, landing page, документация продукта, первые desktop-макеты, Canva-исходники, production branding pack и спецификация Vanilla tier-testing системы.
+Подготовлены домен, landing page, production branding pack, документация продукта, первые desktop-макеты и подробные requirements snapshots перед началом разработки.
+
+## Главный источник требований
+
+Ответы из большого продуктового опроса сохранены в [`docs/snapshots/README.md`](docs/snapshots/README.md).
+
+В snapshots разделены:
+
+- позиционирование продукта и двуязычность;
+- Vanilla CPVP ladder;
+- low-tier, skip-test и high-tier правила;
+- Unranked, Retired, Inactive и Restricted состояния;
+- Discord OAuth и безопасная Minecraft-привязка;
+- публичные профили;
+- tester и senior tester роли;
+- комьюнити-функции;
+- незакрытые вопросы `TBD` для короткого уточнения позже;
+- внешние референсы, которые пока не считаются официальными правилами CPVP.PRO.
+
+Пока snapshots являются временным источником истины. После уточнения оставшихся `TBD` документация будет перенесена в финальную структуру без дублей.
+
+## Зафиксированная Vanilla CPVP система
+
+Первая competitive-категория:
+
+```text
+Vanilla CPVP
+```
+
+Полная ladder-шкала:
+
+```text
+LT5 < HT5 < LT4 < HT4 < LT3 < HT3 < LT2 < HT2 < LT1 < HT1
+```
+
+Основные подтверждённые решения:
+
+- low-tier и high-tier лиги разделены;
+- обычные тестеры проводят low-tier тесты и могут выдать максимум `LT3`;
+- опытный тестер оценивает примерный тир игрока по реальной игре;
+- `4:0` или `4:1` против обычного тестера дают шанс на HT3 skip-test;
+- qualifying игрок сразу получает `LT3`, а затем может заменить его на `HT3`;
+- HT3 skip-test играется против senior tester;
+- high-tier тесты играются против ranked players близкого уровня;
+- стандартный формат матчей: `First to 4`;
+- normal high-tier тест требует полной записи или senior tester spectator verification;
+- normal tier-test заявку можно подавать раз в неделю;
+- cooldown начинается после verdict;
+- testing доступен только для Minecraft Java Edition на ПК или ноутбуке;
+- мобильная версия сайта предназначена для просмотра, заявок и управления профилем.
+
+Подробности:
+
+- [`docs/VANILLA_TESTING_RULES.md`](docs/VANILLA_TESTING_RULES.md)
+- [`docs/TIERLIST_RULES.md`](docs/TIERLIST_RULES.md)
+- [`docs/snapshots/TESTING_REQUIREMENTS.md`](docs/snapshots/TESTING_REQUIREMENTS.md)
+
+## Аккаунты
+
+Tier-test заявку сможет подать только авторизованный пользователь с подтверждённым лицензированным Minecraft Java Edition аккаунтом.
+
+Подтверждено:
+
+- вход на сайт через Discord OAuth;
+- Discord-аккаунт обязателен;
+- Minecraft-привязка предпочтительно через официальный Microsoft OAuth;
+- один CPVP.PRO аккаунт связывается только с одним Minecraft UUID;
+- один Minecraft UUID связывается только с одним CPVP.PRO аккаунтом;
+- свободная смена или self-service unlink не требуются;
+- CPVP.PRO не должен запрашивать или хранить Microsoft-пароль, Minecraft-пароль или session token.
+
+Подробности:
+
+- [`docs/ACCOUNT_LINKING.md`](docs/ACCOUNT_LINKING.md)
+- [`docs/snapshots/ACCOUNT_PROFILE_REQUIREMENTS.md`](docs/snapshots/ACCOUNT_PROFILE_REQUIREMENTS.md)
 
 ## Дизайн
 
@@ -34,7 +108,7 @@ CPVP.PRO не ограничивается тиртестами: tier testing я
 - desktop TierList;
 - desktop forum.
 
-Оставшиеся mobile-макеты и дополнительные desktop-экраны будут добавлены после сброса лимита Figma Starter MCP.
+Оставшиеся mobile-макеты и дополнительные desktop-экраны будут добавлены позже.
 
 ### Canva
 
@@ -45,81 +119,26 @@ CPVP.PRO не ограничивается тиртестами: tier testing я
 - [square announcement post](https://www.canva.com/d/gmSwOh1DreTnhJN);
 - [vertical story template](https://www.canva.com/d/q3k1ftX70akt_El).
 
-Production branding pack полностью загружен в `assets/branding/`. На landing page подключены SVG favicon, ICO fallback, Apple touch icon, Open Graph image, Twitter image и `site.webmanifest`.
-
-## Зафиксированная Vanilla-система
-
-Первая competitive-категория:
-
-```text
-Vanilla
-```
-
-Полная ladder-шкала:
-
-```text
-LT5 < HT5 < LT4 < HT4 < LT3 < HT3 < LT2 < HT2 < LT1 < HT1
-```
-
-Основные решения:
-
-- low-tier и high-tier лиги разделены;
-- обычные тестеры проводят low-tier тесты и могут выдать максимум `LT3`;
-- опытный тестер должен по игре оценить примерный тир заявителя;
-- `4:0` или `4:1` против обычного тестера дают шанс на HT3 skip-test;
-- HT3 skip-test играется против senior tester;
-- high-tier тесты играются против реальных ranked players близкого уровня;
-- формат матчей: `First to 4`;
-- high-tier тесты требуют полной записи или senior tester spectator verification;
-- записи смотрят минимум два senior tester;
-- при разногласии решение принимает staff;
-- tier-test заявку можно подавать раз в неделю;
-- тестирование доступно только для Minecraft Java Edition на ПК или ноутбуке;
-- мобильная версия сайта нужна для удобного просмотра и управления заявками.
-
-Подробности:
-
-- [`docs/VANILLA_TESTING_RULES.md`](docs/VANILLA_TESTING_RULES.md)
-- [`docs/TIERLIST_RULES.md`](docs/TIERLIST_RULES.md)
-- [`docs/ROLES_AND_MODERATION.md`](docs/ROLES_AND_MODERATION.md)
-
-## Безопасная привязка Minecraft-аккаунта
-
-Tier-test заявку сможет подать только авторизованный пользователь с привязанным и подтверждённым лицензированным Minecraft Java Edition аккаунтом.
-
-CPVP.PRO не должен запрашивать Microsoft-пароль, Minecraft-пароль или session token. Привязка нужна для подтверждения личности игрока и ответственности за профиль, а не для получения доступа к аккаунту.
-
-Требования и безопасные варианты реализации:
-
-- [`docs/ACCOUNT_LINKING.md`](docs/ACCOUNT_LINKING.md)
+Production branding pack полностью загружен в `assets/branding/`.
 
 ## Документация
 
-### Product foundation
+### Временный источник истины перед реструктуризацией
+
+- [`docs/snapshots/README.md`](docs/snapshots/README.md)
+- [`docs/snapshots/TBD_DECISIONS.md`](docs/snapshots/TBD_DECISIONS.md)
+- [`docs/references/EXTERNAL_TIER_SYSTEM_REFERENCE.md`](docs/references/EXTERNAL_TIER_SYSTEM_REFERENCE.md)
+
+### Основные текущие документы
 
 - [`docs/PROJECT.md`](docs/PROJECT.md)
 - [`docs/ROADMAP.md`](docs/ROADMAP.md)
 - [`docs/DEVELOPMENT_START_CHECKLIST.md`](docs/DEVELOPMENT_START_CHECKLIST.md)
-- [`docs/INFORMATION_ARCHITECTURE.md`](docs/INFORMATION_ARCHITECTURE.md)
-- [`docs/UI_KIT.md`](docs/UI_KIT.md)
-- [`docs/DESIGN.md`](docs/DESIGN.md)
-- [`docs/FIGMA_STATUS.md`](docs/FIGMA_STATUS.md)
-- [`docs/BRANDING_STATUS.md`](docs/BRANDING_STATUS.md)
-
-### Product rules and content
-
 - [`docs/VANILLA_TESTING_RULES.md`](docs/VANILLA_TESTING_RULES.md)
 - [`docs/TIERLIST_RULES.md`](docs/TIERLIST_RULES.md)
 - [`docs/ACCOUNT_LINKING.md`](docs/ACCOUNT_LINKING.md)
 - [`docs/ROLES_AND_MODERATION.md`](docs/ROLES_AND_MODERATION.md)
-- [`docs/PLATFORM_RULES.md`](docs/PLATFORM_RULES.md)
-- [`docs/FORUM_RULES.md`](docs/FORUM_RULES.md)
-- [`docs/MODERATION_POLICY.md`](docs/MODERATION_POLICY.md)
 - [`docs/FAQ.md`](docs/FAQ.md)
-- [`docs/LEARNING_CONTENT_PLAN.md`](docs/LEARNING_CONTENT_PLAN.md)
-- [`docs/COMMUNITY_PLAN.md`](docs/COMMUNITY_PLAN.md)
-- [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md)
-- [`CONTRIBUTING.md`](CONTRIBUTING.md)
 
 ## Landing page
 
@@ -139,40 +158,6 @@ CPVP.PRO не должен запрашивать Microsoft-пароль, Minecr
 - с Twitter image;
 - с `robots.txt` и `sitemap.xml`.
 
-## Автоматическая проверка
-
-Workflow `.github/workflows/validate-static-site.yml` запускается для `main` и Pull Request. Он проверяет обязательные файлы, домен, SEO-основу, отсутствие JavaScript, отсутствие внешнего CSS и отсутствие Google Fonts.
-
-## Структура репозитория
-
-```text
-cpvp-pro/
-├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   ├── workflows/
-│   ├── CODEOWNERS
-│   └── PULL_REQUEST_TEMPLATE.md
-├── assets/
-│   ├── branding/
-│   └── readme-banner.svg
-├── docs/
-│   ├── ACCOUNT_LINKING.md
-│   ├── DEVELOPMENT_START_CHECKLIST.md
-│   ├── VANILLA_TESTING_RULES.md
-│   └── ...
-├── .editorconfig
-├── .gitignore
-├── .nojekyll
-├── 404.html
-├── CNAME
-├── CONTRIBUTING.md
-├── README.md
-├── index.html
-├── robots.txt
-├── sitemap.xml
-└── site.webmanifest
-```
-
 ## Локальный запуск
 
 ```bash
@@ -183,30 +168,15 @@ python -m http.server 8080
 
 ## Что делать при начале разработки
 
-Перед написанием feature-кода:
-
 1. Открыть [`docs/DEVELOPMENT_START_CHECKLIST.md`](docs/DEVELOPMENT_START_CHECKLIST.md).
-2. Перечитать [`docs/VANILLA_TESTING_RULES.md`](docs/VANILLA_TESTING_RULES.md).
-3. Перечитать [`docs/ACCOUNT_LINKING.md`](docs/ACCOUNT_LINKING.md).
-4. Выбрать frontend, backend и базу данных.
-5. Создать первую architecture branch.
-6. Начать с аккаунтов, профилей и безопасной привязки Minecraft Java Edition аккаунта.
+2. Перечитать snapshots.
+3. Закрыть оставшиеся `TBD` короткими вопросами.
+4. Перенести документы в финальную структуру без дублей.
+5. Выбрать frontend, backend и базу данных.
+6. Создать первую architecture branch.
+7. Начать с аккаунтов, профилей и безопасной Minecraft Java Edition привязки.
 
 ## Roadmap
-
-- [x] Подключить домен `cpvp.pro`
-- [x] Разместить и оптимизировать landing page
-- [x] Добавить SEO-основу
-- [x] Добавить полный branding pack
-- [x] Оформить репозиторий и документацию
-- [x] Подготовить desktop-макеты в Figma
-- [x] Подготовить Canva-исходники
-- [x] Зафиксировать Vanilla testing model
-- [x] Зафиксировать safe Minecraft account-linking requirements
-- [x] Подготовить development-start checklist
-- [ ] Подготовить mobile-макеты
-- [ ] Выбрать стек
-- [ ] Начать разработку полноценной платформы
 
 Полная версия roadmap находится в [`docs/ROADMAP.md`](docs/ROADMAP.md).
 
