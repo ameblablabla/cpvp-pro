@@ -1,61 +1,40 @@
-# CPVP.PRO manual branding upload
+# CPVP.PRO branding upload status
 
-## Why this step is manual
+## Completed
 
-The GitHub connector used in this session can write UTF-8 text files, including SVG and JSON. It does not upload binary PNG and ICO files.
+The production branding pack has been uploaded to the repository.
 
-A complete branding pack is already prepared separately. Upload these files later through the GitHub web interface or a local Git client.
-
-## Upload target
-
-Create or open:
+Uploaded files:
 
 ```text
 assets/branding/
+├── logo.svg
+├── logo-mark.svg
+├── logo-mark.png
+├── favicon.svg
+├── favicon.ico
+├── apple-touch-icon.png
+├── og-image.png
+├── social-cover.png
+├── announcement-template.png
+└── story-template.png
 ```
 
-Upload:
+## Connected on the landing page
+
+- SVG favicon.
+- ICO fallback.
+- Apple touch icon.
+- Open Graph image.
+- Twitter image.
+- Webmanifest.
+
+## Verification paths
 
 ```text
-logo.svg
-logo-mark.png
-favicon.ico
-apple-touch-icon.png
-og-image.png
-social-cover.png
-announcement-template.png
-story-template.png
+https://cpvp.pro/assets/branding/favicon.svg
+https://cpvp.pro/assets/branding/favicon.ico
+https://cpvp.pro/assets/branding/apple-touch-icon.png
+https://cpvp.pro/assets/branding/og-image.png
+https://cpvp.pro/site.webmanifest
 ```
-
-The repository already contains:
-
-```text
-assets/branding/logo-mark.svg
-assets/branding/favicon.svg
-site.webmanifest
-```
-
-## Update after upload
-
-After adding `og-image.png`, add these tags to the `<head>` section of `index.html`:
-
-```html
-<meta property="og:image" content="https://cpvp.pro/assets/branding/og-image.png">
-<meta name="twitter:image" content="https://cpvp.pro/assets/branding/og-image.png">
-<link rel="apple-touch-icon" href="/assets/branding/apple-touch-icon.png">
-```
-
-After adding `favicon.ico`, keep the SVG favicon as the primary option and add the compatibility fallback:
-
-```html
-<link rel="icon" href="/assets/branding/favicon.ico" sizes="any">
-```
-
-## Verification
-
-Check:
-
-- `https://cpvp.pro/assets/branding/favicon.svg`
-- `https://cpvp.pro/site.webmanifest`
-- `https://cpvp.pro/assets/branding/og-image.png`
-- social link preview after deployment
