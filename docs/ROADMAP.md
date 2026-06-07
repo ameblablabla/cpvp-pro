@@ -9,6 +9,8 @@
 - [x] Add repository documentation.
 - [x] Add a branded `404.html` page.
 - [x] Add automated checks for the static site.
+- [x] Add `robots.txt` and `sitemap.xml`.
+- [x] Add canonical and social metadata.
 
 ## Stage 1 — Product structure
 
@@ -22,44 +24,55 @@
 - [ ] Prepare desktop player profile layout.
 - [ ] Prepare desktop moderation layout.
 - [ ] Prepare mobile layouts.
-- [ ] Export final branding assets.
 
-## Stage 2 — Product content
+## Stage 2 — Branding
+
+- [x] Prepare editable logo source in Canva.
+- [x] Prepare editable social cover source in Canva.
+- [x] Prepare editable announcement post source in Canva.
+- [x] Prepare editable story template source in Canva.
+- [ ] Export final production branding assets.
+- [ ] Add favicon pack and OG image to the site.
+
+## Stage 3 — Product content
 
 - [x] Define the initial roles model.
 - [x] Add a release checklist.
-- [ ] Define TierList criteria.
-- [ ] Prepare platform rules.
-- [ ] Prepare forum rules.
-- [ ] Prepare FAQ content.
+- [x] Prepare TierList rules draft.
+- [x] Prepare platform rules draft.
+- [x] Prepare forum rules draft.
+- [x] Prepare FAQ draft.
+- [x] Prepare moderation policy draft.
+- [x] Prepare learning content plan.
+- [x] Prepare community plan.
 
-## Stage 3 — Accounts
+## Stage 4 — Accounts
 
 - [ ] Add user profiles.
 - [ ] Add sign in.
 - [ ] Prepare profile settings.
 
-## Stage 4 — Learning section
+## Stage 5 — Learning section
 
 - [ ] Add categories for lessons and guides.
 - [ ] Add lesson pages.
 - [ ] Add progress tracking.
 - [ ] Add search and filters.
 
-## Stage 5 — TierList
+## Stage 6 — TierList
 
-- [ ] Define rating categories.
+- [ ] Define final rating categories.
 - [ ] Add player cards.
 - [ ] Add history of changes.
 - [ ] Add review workflow.
 
-## Stage 6 — Forum and community
+## Stage 7 — Forum and community
 
 - [ ] Add topics and replies.
 - [ ] Add community profiles.
 - [ ] Add notifications.
 
-## Stage 7 — Quality and operations
+## Stage 8 — Quality and operations
 
 - [ ] Add performance monitoring.
 - [ ] Add error monitoring.
