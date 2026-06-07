@@ -17,8 +17,12 @@
 ## Документация
 
 - [`docs/PROJECT.md`](docs/PROJECT.md) — краткий обзор текущего состояния проекта.
-- [`docs/ROADMAP.md`](docs/ROADMAP.md) — этапы дальнейшей разработки.
-- [`docs/DESIGN.md`](docs/DESIGN.md) — правила визуального языка и работы с дизайн-ассетами.
+- [`docs/ROADMAP.md`](docs/ROADMAP.md) — этапы дальнейшей разработки с отмеченным прогрессом.
+- [`docs/INFORMATION_ARCHITECTURE.md`](docs/INFORMATION_ARCHITECTURE.md) — карта разделов и навигации платформы.
+- [`docs/UI_KIT.md`](docs/UI_KIT.md) — начальная спецификация компонентов интерфейса.
+- [`docs/ROLES_AND_MODERATION.md`](docs/ROLES_AND_MODERATION.md) — роли пользователей и базовые правила модерации.
+- [`docs/DESIGN.md`](docs/DESIGN.md) — визуальный язык и правила работы с дизайн-ассетами.
+- [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md) — checklist перед публикацией изменений.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — правила внесения изменений.
 
 ## Планируемые разделы
@@ -44,29 +48,48 @@
 - с inline SVG favicon;
 - с оптимизированными CSS-анимациями через `transform` и `opacity`.
 
+## Автоматическая проверка
+
+Для ветки `main` и Pull Request добавлен workflow `.github/workflows/validate-static-site.yml`.
+
+Он проверяет:
+
+- наличие обязательных файлов;
+- корректное значение `CNAME`;
+- отсутствие случайно добавленного JavaScript;
+- отсутствие внешнего stylesheet;
+- отсутствие запросов к Google Fonts;
+- наличие фирменной страницы `404.html`.
+
 ## Структура репозитория
 
 ```text
 cpvp-pro/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
-│   │   └── bug_report.md          # шаблон сообщения об ошибке
-│   ├── CODEOWNERS                 # владелец изменений в репозитории
-│   └── PULL_REQUEST_TEMPLATE.md   # единый шаблон Pull Request
+│   │   └── bug_report.md                 # шаблон сообщения об ошибке
+│   ├── workflows/
+│   │   └── validate-static-site.yml      # автоматическая проверка landing page
+│   ├── CODEOWNERS                        # владелец изменений в репозитории
+│   └── PULL_REQUEST_TEMPLATE.md          # единый шаблон Pull Request
 ├── assets/
-│   └── readme-banner.svg          # фирменный баннер README
+│   └── readme-banner.svg                 # фирменный баннер README
 ├── docs/
-│   ├── DESIGN.md                  # визуальный язык проекта
-│   ├── PROJECT.md                 # обзор текущей реализации
-│   └── ROADMAP.md                 # этапы разработки
-├── .editorconfig                  # единый стиль форматирования файлов
-├── .gitignore                     # исключения для локальных файлов
-├── .nojekyll                      # отключение обработки Jekyll
-├── 404.html                       # фирменная страница ошибки
-├── CNAME                          # подключение домена cpvp.pro
-├── CONTRIBUTING.md                # правила внесения изменений
-├── README.md                      # описание проекта
-└── index.html                     # production landing page
+│   ├── DESIGN.md                         # визуальный язык проекта
+│   ├── INFORMATION_ARCHITECTURE.md       # структура будущей платформы
+│   ├── PROJECT.md                        # обзор текущей реализации
+│   ├── RELEASE_CHECKLIST.md              # checklist публикации
+│   ├── ROADMAP.md                        # этапы разработки
+│   ├── ROLES_AND_MODERATION.md           # роли и базовая модерация
+│   └── UI_KIT.md                         # компоненты будущего интерфейса
+├── .editorconfig                         # единый стиль форматирования файлов
+├── .gitignore                            # исключения для локальных файлов
+├── .nojekyll                             # отключение обработки Jekyll
+├── 404.html                              # фирменная страница ошибки
+├── CNAME                                 # подключение домена cpvp.pro
+├── CONTRIBUTING.md                       # правила внесения изменений
+├── README.md                             # описание проекта
+└── index.html                            # production landing page
 ```
 
 ## Локальный запуск
@@ -111,8 +134,11 @@ cpvp.pro
 - [x] Убрать внешние зависимости из критического пути
 - [x] Добавить оформление и документацию репозитория
 - [x] Добавить фирменную страницу `404`
-- [ ] Спроектировать структуру полноценной платформы
-- [ ] Подготовить UI-kit и дизайн-систему
+- [x] Зафиксировать структуру платформы и навигацию
+- [x] Подготовить первую спецификацию UI-kit
+- [x] Добавить автоматические проверки landing page
+- [ ] Подготовить desktop и mobile макеты
+- [ ] Экспортировать финальные branding-ассеты
 - [ ] Реализовать систему аккаунтов
 - [ ] Добавить раздел обучения
 - [ ] Реализовать TierList
