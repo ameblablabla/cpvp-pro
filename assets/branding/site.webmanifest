@@ -1,0 +1,12 @@
+{
+  "name": "CPVP.PRO",
+  "short_name": "CPVP.PRO",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05070D",
+  "theme_color": "#070910",
+  "icons": [
+    {"src": "/assets/branding/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"},
+    {"src": "/assets/branding/logo-mark.png", "sizes": "512x512", "type": "image/png"}
+  ]
+}
