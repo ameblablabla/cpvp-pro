@@ -7,45 +7,56 @@
 - [x] Remove unnecessary external dependencies.
 - [x] Add mobile layout support.
 - [x] Add repository documentation.
+- [x] Add a branded `404.html` page.
+- [x] Add automated checks for the static site.
 
 ## Stage 1 — Product structure
 
-- [ ] Define the information architecture.
-- [ ] Prepare the first UI kit.
-- [ ] Define navigation and page hierarchy.
-- [ ] Prepare desktop and mobile layouts.
+- [x] Define the information architecture.
+- [x] Prepare the first UI kit specification.
+- [x] Define navigation and page hierarchy.
+- [ ] Prepare desktop layouts.
+- [ ] Prepare mobile layouts.
+- [ ] Export final branding assets.
 
-## Stage 2 — Accounts
+## Stage 2 — Product content
+
+- [x] Define the initial roles model.
+- [x] Add a release checklist.
+- [ ] Define TierList criteria.
+- [ ] Prepare platform rules.
+- [ ] Prepare forum rules.
+- [ ] Prepare FAQ content.
+
+## Stage 3 — Accounts
 
 - [ ] Add user profiles.
-- [ ] Add authentication.
-- [ ] Define roles and moderation permissions.
+- [ ] Add sign in.
 - [ ] Prepare profile settings.
 
-## Stage 3 — Learning section
+## Stage 4 — Learning section
 
 - [ ] Add categories for lessons and guides.
 - [ ] Add lesson pages.
 - [ ] Add progress tracking.
 - [ ] Add search and filters.
 
-## Stage 4 — TierList
+## Stage 5 — TierList
 
 - [ ] Define rating categories.
 - [ ] Add player cards.
 - [ ] Add history of changes.
-- [ ] Add moderation workflow.
+- [ ] Add review workflow.
 
-## Stage 5 — Forum and community
+## Stage 6 — Forum and community
 
 - [ ] Add topics and replies.
-- [ ] Add moderation tools.
 - [ ] Add community profiles.
 - [ ] Add notifications.
 
-## Stage 6 — Quality and operations
+## Stage 7 — Quality and operations
 
 - [ ] Add performance monitoring.
 - [ ] Add error monitoring.
-- [ ] Add automated checks.
-- [ ] Review accessibility.
+- [x] Add automated checks for the landing page.
+- [ ] Review accessibility for the full platform.
