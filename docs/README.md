@@ -10,6 +10,7 @@ The documentation is organized into a single structure. Outdated drafts and temp
 - [`product/ROADMAP.md`](product/ROADMAP.md) — этапы разработки.
 - [`product/DEVELOPMENT_START_CHECKLIST.md`](product/DEVELOPMENT_START_CHECKLIST.md) — с чего начинать разработку.
 - [`product/INFORMATION_ARCHITECTURE.md`](product/INFORMATION_ARCHITECTURE.md) — страницы, навигация и rollout.
+- [`product/PLAYER_PROFILES.md`](product/PLAYER_PROFILES.md) — поля профиля, privacy, highlights и косметика.
 - [`product/TBD_DECISIONS.md`](product/TBD_DECISIONS.md) — только оставшиеся нерешённые вопросы.
 
 ## Rules
