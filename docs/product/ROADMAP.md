@@ -38,7 +38,7 @@ The first public product version should focus on learning before TierList launch
 - [ ] Add notifications.
 - [ ] Add player following with configurable notifications.
 - [ ] Add Find Duel.
-- [ ] Add teams, invitations, applications and team pages.
+- [ ] Add teams, applications and team pages.
 - [ ] Add team rating and team matches.
 - [ ] Add bilingual Discord structure.
 - [ ] Add Telegram announcement channel.
