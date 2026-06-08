@@ -2,43 +2,29 @@
 
 ## Stage 0 — Foundation
 
-- [x] Connect `cpvp.pro`.
-- [x] Publish lightweight landing page.
-- [x] Add branded `404.html`.
-- [x] Add SEO metadata, `robots.txt` and `sitemap.xml`.
-- [x] Add favicon pack, manifest and social preview assets.
-- [x] Add static-site validation workflow.
-- [x] Prepare Figma foundations and initial desktop layouts.
-- [x] Prepare Canva branding sources.
-- [x] Normalize product requirements and documentation.
+- [x] Domain, landing page, branded 404 and SEO.
+- [x] Branding pack, manifest and social preview assets.
+- [x] Static-site validation workflow.
+- [x] Initial Figma layouts and Canva sources.
+- [x] Normalized product documentation.
 
 ## Stage 1 — Learning-first release
 
-The first public product version should focus on learning before TierList launch.
-
-- [ ] Choose frontend, backend and database.
-- [ ] Add Russian-English localization infrastructure.
-- [ ] Add browser-language auto-detection.
-- [ ] Add navbar language switcher.
-- [ ] Build account sign-in with Discord OAuth.
-- [ ] Build basic profiles and settings.
-- [ ] Build learning catalog.
-- [ ] Build guide pages.
-- [ ] Add learning search and filters.
-- [ ] Add progress tracking.
-- [ ] Add reactions under guides.
-- [ ] Add paid learning subscription tiers.
-- [ ] Add subscription-linked Discord roles.
-- [ ] Add early-access entitlement handling.
-- [ ] Add profile customization entitlements.
+- [ ] Choose frontend, backend, database and hosting.
+- [ ] Add Russian-English localization.
+- [ ] Add browser-language auto-detection and navbar switcher.
+- [ ] Add Discord OAuth sign-in.
+- [ ] Add basic profiles, settings and notifications.
+- [ ] Build learning catalog, guide pages, search and filters.
+- [ ] Add progress tracking and reactions under guides.
+- [ ] Add paid learning tiers, Discord roles, early access and cosmetics.
 - [ ] Launch learning-first public version.
 
 ## Stage 2 — Community layer
 
-- [ ] Add notifications.
 - [ ] Add player following with configurable notifications.
 - [ ] Add Find Duel.
-- [ ] Add teams, applications, invitations and team pages.
+- [ ] Add teams, applications and public team pages.
 - [ ] Add team rating and team matches.
 - [ ] Add bilingual Discord structure.
 - [ ] Add Telegram announcement channel.
@@ -48,54 +34,34 @@ The first public product version should focus on learning before TierList launch
 - [ ] Add licensed Minecraft Java Edition linking through official Microsoft OAuth.
 - [ ] Enforce one CPVP.PRO account per Minecraft UUID.
 - [ ] Store UUID and nickname history.
-- [ ] Add support-only link replacement flow.
-- [ ] Add staff investigation unlink capability.
+- [ ] Add support-only replacement and staff investigation unlink flows.
 - [ ] Add Verified Player status.
 
 ## Stage 4 — Vanilla CPVP TierList
 
-- [ ] Add `Vanilla CPVP` category.
-- [ ] Add ladder from `LT5` to `HT1`.
+- [ ] Add `Vanilla CPVP` category and ladder from `LT5` to `HT1`.
 - [ ] Add Unranked, Retired, Inactive and Restricted states.
-- [ ] Add public TierList.
-- [ ] Add player tier history.
-- [ ] Add tier-test applications.
-- [ ] Add regional waitlists and high-tier tickets.
-- [ ] Add weekly cooldown enforcement.
-- [ ] Add regular tester workflows.
-- [ ] Add HT3 skip-test flow.
-- [ ] Add high-tier evidence review.
-- [ ] Add verdict history and hover details.
-- [ ] Add appeal flow.
+- [ ] Add public TierList and player tier history.
+- [ ] Add applications, regional waitlists and high-tier tickets.
+- [ ] Add weekly cooldown, tester workflows and HT3 skip-test.
+- [ ] Add high-tier evidence review, verdict history and appeals.
 
 ## Stage 5 — Moderation and operations
 
-- [ ] Add moderation panel.
-- [ ] Add tester panel.
-- [ ] Add staff role management.
-- [ ] Add tester recruitment workflow.
-- [ ] Add senior tester appointment workflow.
-- [ ] Add complaint queues.
-- [ ] Add public punishment badges with hover details.
-- [ ] Add internal audit log.
+- [ ] Add moderation and tester panels.
+- [ ] Add staff role management and tester recruitment.
+- [ ] Add complaint queues, punishment badges and audit log.
 - [ ] Add final verdict storage.
 
 ## Stage 6 — Forum
 
 Forum is intentionally a later-stage feature.
 
-- [ ] Add forum categories.
-- [ ] Add topics and replies.
-- [ ] Add reactions under forum posts.
+- [ ] Add categories, topics, replies and reactions.
 - [ ] Add reports and moderation actions.
 
-## Stage 7 — Quality and launch hardening
+## Stage 7 — Quality
 
-- [ ] Add performance monitoring.
-- [ ] Add error monitoring.
-- [ ] Add backups.
-- [ ] Add rate limiting.
-- [ ] Add upload validation.
+- [ ] Add monitoring, backups, rate limiting and validation.
 - [ ] Complete accessibility review.
 - [ ] Run closed testing.
-- [ ] Publish release checklist results.
