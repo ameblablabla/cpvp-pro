@@ -19,7 +19,9 @@ The documentation is organized into a single structure. Outdated drafts and temp
 - [`rules/FORUM_RULES.md`](rules/FORUM_RULES.md) — правила форума.
 - [`rules/VANILLA_KIT_RULES.md`](rules/VANILLA_KIT_RULES.md) — placeholder финальных правил китов.
 - [`rules/VANILLA_TESTING_RULES.md`](rules/VANILLA_TESTING_RULES.md) — официальный черновик тиртестов.
-- [`rules/FAIR_PLAY_AND_MODS.md`](rules/FAIR_PLAY_AND_MODS.md) — честная игра и моды.
+- [`rules/CHEATING_POLICY.md`](rules/CHEATING_POLICY.md) — нарушения честной игры.
+- [`rules/MOD_CLIENT_RULES.md`](rules/MOD_CLIENT_RULES.md) — правила модов и клиентов.
+- [`rules/MATCH_DISPUTES.md`](rules/MATCH_DISPUTES.md) — спорные и технические матчи.
 - [`rules/APPEALS.md`](rules/APPEALS.md) — апелляции.
 - [`rules/PRIVACY_POLICY.md`](rules/PRIVACY_POLICY.md) — privacy placeholder перед legal review.
 - [`rules/TERMS_OF_USE.md`](rules/TERMS_OF_USE.md) — terms placeholder перед legal review.
