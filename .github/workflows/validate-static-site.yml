@@ -22,17 +22,32 @@ jobs:
           test -f .nojekyll
           test -f robots.txt
           test -f sitemap.xml
+          test -f site.webmanifest
+          test -f docs/README.md
+          test -f assets/branding/favicon.svg
+          test -f assets/branding/favicon.ico
+          test -f assets/branding/apple-touch-icon.png
+          test -f assets/branding/og-image.png
 
       - name: Check custom domain
         run: grep -Fxq 'cpvp.pro' CNAME
 
-      - name: Check SEO files
+      - name: Check SEO metadata
         run: |
           grep -Fq 'Sitemap: https://cpvp.pro/sitemap.xml' robots.txt
           grep -Fq '<loc>https://cpvp.pro/</loc>' sitemap.xml
           grep -Fq '<link rel="canonical" href="https://cpvp.pro/">' index.html
           grep -Fq '<meta property="og:site_name" content="CPVP.PRO">' index.html
-          grep -Fq '<meta name="twitter:card" content="summary">' index.html
+          grep -Fq '<meta property="og:image" content="https://cpvp.pro/assets/branding/og-image.png">' index.html
+          grep -Fq '<meta name="twitter:card" content="summary_large_image">' index.html
+          grep -Fq '<meta name="twitter:image" content="https://cpvp.pro/assets/branding/og-image.png">' index.html
+
+      - name: Check branding links
+        run: |
+          grep -Fq '<link rel="icon" type="image/svg+xml" href="/assets/branding/favicon.svg">' index.html
+          grep -Fq '<link rel="icon" href="/assets/branding/favicon.ico" sizes="any">' index.html
+          grep -Fq '<link rel="apple-touch-icon" href="/assets/branding/apple-touch-icon.png">' index.html
+          grep -Fq '<link rel="manifest" href="/site.webmanifest">' index.html
 
       - name: Check lightweight landing page
         run: |
