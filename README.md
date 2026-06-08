@@ -4,182 +4,125 @@
 
 # CPVP.PRO
 
-**CPVP.PRO** — развивающаяся русскоязычная и англоязычная платформа для игроков Minecraft Crystal PvP. Проект объединит обучение, профили игроков, Vanilla CPVP TierList, правила, уведомления, Find Duel, команды и другие комьюнити-инструменты.
+**CPVP.PRO** — bilingual Russian-English Crystal PvP community platform for Minecraft Java Edition players.
 
-CPVP.PRO не ограничивается тиртестами: tier testing является важной частью платформы, но не единственным назначением сайта.
+The project is not limited to tier testing. The first public milestone focuses on learning. Later releases add profiles, notifications, Find Duel, teams, licensed Minecraft account linking, Vanilla CPVP TierList, tester workflows, moderation and forum features.
 
-Сейчас в репозитории находится оптимизированная временная landing page для домена [`cpvp.pro`](https://cpvp.pro/).
+Current public page: [`cpvp.pro`](https://cpvp.pro/)
 
-## Статус
+## Current status
 
-> **In development** — публичная версия платформы ещё не запущена.
+> **In development** — the full platform is not released yet.
 
-Подготовлены домен, landing page, production branding pack, документация продукта, первые desktop-макеты и подробные requirements snapshots перед началом разработки.
+Ready now:
 
-## Главный источник требований
+- lightweight GitHub Pages landing page;
+- custom domain, SEO metadata and branded `404.html`;
+- production branding pack;
+- Figma foundations and initial desktop layouts;
+- normalized product documentation;
+- Vanilla CPVP testing draft;
+- Discord OAuth and safe Microsoft OAuth linking requirements;
+- learning-first roadmap.
 
-Ответы из большого продуктового опроса сохранены в [`docs/snapshots/README.md`](docs/snapshots/README.md).
+## Product direction
 
-В snapshots разделены:
-
-- позиционирование продукта и двуязычность;
-- Vanilla CPVP ladder;
-- low-tier, skip-test и high-tier правила;
-- Unranked, Retired, Inactive и Restricted состояния;
-- Discord OAuth и безопасная Minecraft-привязка;
-- публичные профили;
-- tester и senior tester роли;
-- комьюнити-функции;
-- незакрытые вопросы `TBD` для короткого уточнения позже;
-- внешние референсы, которые пока не считаются официальными правилами CPVP.PRO.
-
-Пока snapshots являются временным источником истины. После уточнения оставшихся `TBD` документация будет перенесена в финальную структуру без дублей.
-
-## Зафиксированная Vanilla CPVP система
-
-Первая competitive-категория:
+First public release:
 
 ```text
-Vanilla CPVP
+Learning catalog
+Guide pages
+Search and filters
+Learning progress
+Russian-English localization
+Browser-language auto-detection
+Navbar language switcher
+Discord OAuth sign-in
+Basic profiles and settings
+Notifications
+Paid learning subscription tiers
 ```
 
-Полная ladder-шкала:
+Later releases:
+
+```text
+Find Duel
+Teams
+Minecraft account linking
+Vanilla CPVP TierList
+Tester panel
+Moderation panel
+Forum
+```
+
+## Vanilla CPVP ladder
 
 ```text
 LT5 < HT5 < LT4 < HT4 < LT3 < HT3 < LT2 < HT2 < LT1 < HT1
 ```
 
-Основные подтверждённые решения:
+Detailed rules: [`docs/rules/VANILLA_TESTING_RULES.md`](docs/rules/VANILLA_TESTING_RULES.md)
 
-- low-tier и high-tier лиги разделены;
-- обычные тестеры проводят low-tier тесты и могут выдать максимум `LT3`;
-- опытный тестер оценивает примерный тир игрока по реальной игре;
-- `4:0` или `4:1` против обычного тестера дают шанс на HT3 skip-test;
-- qualifying игрок сразу получает `LT3`, а затем может заменить его на `HT3`;
-- HT3 skip-test играется против senior tester;
-- high-tier тесты играются против ranked players близкого уровня;
-- стандартный формат матчей: `First to 4`;
-- normal high-tier тест требует полной записи или senior tester spectator verification;
-- normal tier-test заявку можно подавать раз в неделю;
-- cooldown начинается после verdict;
-- testing доступен только для Minecraft Java Edition на ПК или ноутбуке;
-- мобильная версия сайта предназначена для просмотра, заявок и управления профилем.
+## Documentation
 
-Подробности:
+Start here: [`docs/README.md`](docs/README.md)
 
-- [`docs/VANILLA_TESTING_RULES.md`](docs/VANILLA_TESTING_RULES.md)
-- [`docs/TIERLIST_RULES.md`](docs/TIERLIST_RULES.md)
-- [`docs/snapshots/TESTING_REQUIREMENTS.md`](docs/snapshots/TESTING_REQUIREMENTS.md)
+Main sections:
 
-## Аккаунты
+```text
+docs/
+├── product/
+├── rules/
+├── operations/
+├── design/
+├── content/
+└── references/
+```
 
-Tier-test заявку сможет подать только авторизованный пользователь с подтверждённым лицензированным Minecraft Java Edition аккаунтом.
+Key files:
 
-Подтверждено:
+- [`docs/product/ROADMAP.md`](docs/product/ROADMAP.md)
+- [`docs/product/DEVELOPMENT_START_CHECKLIST.md`](docs/product/DEVELOPMENT_START_CHECKLIST.md)
+- [`docs/product/TBD_DECISIONS.md`](docs/product/TBD_DECISIONS.md)
+- [`docs/operations/ACCOUNT_LINKING.md`](docs/operations/ACCOUNT_LINKING.md)
+- [`docs/content/LEARNING_PLAN.md`](docs/content/LEARNING_PLAN.md)
+- [`docs/design/DESIGN_SYSTEM.md`](docs/design/DESIGN_SYSTEM.md)
 
-- вход на сайт через Discord OAuth;
-- Discord-аккаунт обязателен;
-- Minecraft-привязка предпочтительно через официальный Microsoft OAuth;
-- один CPVP.PRO аккаунт связывается только с одним Minecraft UUID;
-- один Minecraft UUID связывается только с одним CPVP.PRO аккаунтом;
-- свободная смена или self-service unlink не требуются;
-- CPVP.PRO не должен запрашивать или хранить Microsoft-пароль, Minecraft-пароль или session token.
+## Design sources
 
-Подробности:
-
-- [`docs/ACCOUNT_LINKING.md`](docs/ACCOUNT_LINKING.md)
-- [`docs/snapshots/ACCOUNT_PROFILE_REQUIREMENTS.md`](docs/snapshots/ACCOUNT_PROFILE_REQUIREMENTS.md)
-
-## Дизайн
-
-### Figma
-
-Основной файл:
+Figma:
 
 [`CPVP.PRO — UI Kit and Product Layouts`](https://www.figma.com/design/7VjJ1bfnfWLSnxIJOTHko9/CPVP.PRO-%E2%80%94-UI-Kit-and-Product-Layouts?node-id=0-1&p=f)
 
-Уже готовы:
+Canva:
 
-- cover;
-- foundations;
-- UI-kit;
-- desktop home;
-- desktop learning;
-- desktop TierList;
-- desktop forum.
+- [logo and wordmark](https://www.canva.com/d/i0h_0fPMxTsPaFN)
+- [social cover](https://www.canva.com/d/4z_sqetriJFXBbc)
+- [announcement post](https://www.canva.com/d/gmSwOh1DreTnhJN)
+- [story template](https://www.canva.com/d/q3k1ftX70akt_El)
 
-Оставшиеся mobile-макеты и дополнительные desktop-экраны будут добавлены позже.
+## Landing page principles
 
-### Canva
+The current landing page intentionally stays lightweight:
 
-Редактируемые исходники:
+- no JavaScript;
+- no frameworks;
+- no external fonts;
+- no external stylesheet;
+- responsive mobile layout;
+- reduced-motion support;
+- favicon pack and manifest;
+- Open Graph and Twitter image metadata;
+- `robots.txt` and `sitemap.xml`.
 
-- [logo and wordmark](https://www.canva.com/d/i0h_0fPMxTsPaFN);
-- [wide social cover](https://www.canva.com/d/4z_sqetriJFXBbc);
-- [square announcement post](https://www.canva.com/d/gmSwOh1DreTnhJN);
-- [vertical story template](https://www.canva.com/d/q3k1ftX70akt_El).
-
-Production branding pack полностью загружен в `assets/branding/`.
-
-## Документация
-
-### Временный источник истины перед реструктуризацией
-
-- [`docs/snapshots/README.md`](docs/snapshots/README.md)
-- [`docs/snapshots/TBD_DECISIONS.md`](docs/snapshots/TBD_DECISIONS.md)
-- [`docs/references/EXTERNAL_TIER_SYSTEM_REFERENCE.md`](docs/references/EXTERNAL_TIER_SYSTEM_REFERENCE.md)
-
-### Основные текущие документы
-
-- [`docs/PROJECT.md`](docs/PROJECT.md)
-- [`docs/ROADMAP.md`](docs/ROADMAP.md)
-- [`docs/DEVELOPMENT_START_CHECKLIST.md`](docs/DEVELOPMENT_START_CHECKLIST.md)
-- [`docs/VANILLA_TESTING_RULES.md`](docs/VANILLA_TESTING_RULES.md)
-- [`docs/TIERLIST_RULES.md`](docs/TIERLIST_RULES.md)
-- [`docs/ACCOUNT_LINKING.md`](docs/ACCOUNT_LINKING.md)
-- [`docs/ROLES_AND_MODERATION.md`](docs/ROLES_AND_MODERATION.md)
-- [`docs/FAQ.md`](docs/FAQ.md)
-
-## Landing page
-
-Текущая страница намеренно сделана лёгкой:
-
-- без JavaScript;
-- без фреймворков;
-- без внешних шрифтов;
-- без внешнего CSS;
-- с адаптивной мобильной версией;
-- с `prefers-reduced-motion`;
-- с SVG favicon и ICO fallback;
-- с Apple touch icon;
-- с `site.webmanifest`;
-- с canonical URL;
-- с Open Graph image;
-- с Twitter image;
-- с `robots.txt` и `sitemap.xml`.
-
-## Локальный запуск
+## Local preview
 
 ```bash
 python -m http.server 8080
 ```
 
-Страница будет доступна по адресу `http://localhost:8080`.
+Then open `http://localhost:8080`.
 
-## Что делать при начале разработки
+## License
 
-1. Открыть [`docs/DEVELOPMENT_START_CHECKLIST.md`](docs/DEVELOPMENT_START_CHECKLIST.md).
-2. Перечитать snapshots.
-3. Закрыть оставшиеся `TBD` короткими вопросами.
-4. Перенести документы в финальную структуру без дублей.
-5. Выбрать frontend, backend и базу данных.
-6. Создать первую architecture branch.
-7. Начать с аккаунтов, профилей и безопасной Minecraft Java Edition привязки.
-
-## Roadmap
-
-Полная версия roadmap находится в [`docs/ROADMAP.md`](docs/ROADMAP.md).
-
-## Лицензия
-
-Лицензия пока не выбрана. До появления отдельного файла `LICENSE` исходный код проекта не считается открытым для свободного копирования, изменения или распространения.
+No `LICENSE` file has been selected yet. Until then, the source code is not offered for unrestricted copying, modification or redistribution.
